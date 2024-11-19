@@ -1,0 +1,12 @@
+/* LandingSection.css */
+.landing {
+    padding: 50px;
+    text-align: center;
+    background-color: #f4f4f4;
+  }
+  
+  .avatar {
+    width: 150px;
+    border-radius: 50%;
+  }
+  
