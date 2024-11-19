@@ -1,0 +1,21 @@
+/* Header.css */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+  }
+  
+  .header.hidden {
+    transform: translateY(-100%);
+  }
+  
+  .header nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  
