@@ -1,12 +1,14 @@
-/* App.css */
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .app {
-    text-align: center;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  color: #111827;
+  background-color: #F9FAFB;
+  line-height: 1.6;
+}

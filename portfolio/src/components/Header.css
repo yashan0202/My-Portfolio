@@ -1,21 +1,30 @@
-/* Header.css */
+/* Header */
 .header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    padding: 1rem;
-    transition: transform 0.3s ease-in-out;
-    z-index: 1000;
-  }
-  
-  .header.hidden {
-    transform: translateY(-100%);
-  }
-  
-  .header nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #1E293B;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+.header a {
+  color: #F9FAFB;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.header a:hover {
+  color: #FFC107;
+}

@@ -1,12 +1,31 @@
-/* LandingSection.css */
+/* Landing Section */
 .landing {
-    padding: 50px;
-    text-align: center;
-    background-color: #f4f4f4;
-  }
-  
-  .avatar {
-    width: 150px;
-    border-radius: 50%;
-  }
-  
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(120deg, #4CAF50, #1E293B);
+  color: #F9FAFB;
+  padding: 0 1rem;
+}
+
+.landing .avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid #FFC107;
+  margin-bottom: 20px;
+}
+
+.landing h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.landing p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 600px;
+}
