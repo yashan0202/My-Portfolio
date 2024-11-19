@@ -1,0 +1,18 @@
+/* ProjectCard.css */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card h3 {
+    margin: 0;
+  }
+  
+  .card a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
