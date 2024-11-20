@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -28,11 +30,11 @@ const Header = () => {
         <span className="line"></span>
         <span className="line"></span>
       </div>
-      <div className="dark-mode-toggle">
-        <label className="switch">
-          <input type="checkbox" onChange={toggleDarkMode} />
-          <span className="slider"></span>
-        </label>
+      <div className="dark-mode-toggle" onClick = {toggleDarkMode}>
+      <div className={`toggle-switch ${isDarkMode ? "dark" : "light"}`}>
+        <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} 
+        className="dark-mode-icon" />
+        </div>
       </div>
     </header>
   );

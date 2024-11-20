@@ -42,6 +42,51 @@
  }
  
  /* Dark Mode Toggle */
+/* Dark Mode Toggle Styling */
+.dark-mode-toggle {
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 24px;
+  border-radius: 12px;
+  background-color: var(--border-color); /* Neutral background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  transition: background-color 0.3s;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+.dark-mode-toggle:hover {
+  background-color: var(--primary-hover-color); /* Highlight on hover */
+}
+
+.toggle-switch {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--text-color); /* Icon background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.4s, background-color 0.3s;
+}
+
+.toggle-switch.light {
+  transform: translateX(-10px); /* Align icon to the left */
+}
+
+.toggle-switch.dark {
+  transform: translateX(10px); /* Align icon to the right */
+}
+
+.dark-mode-icon {
+  font-size: 14px; /* Adjust icon size */
+  color: var(--bg-color); /* Icon color */
+}
+
  .switch {
    position: relative;
    display: inline-block;
