@@ -1,18 +1,64 @@
+@import "~@fortawesome/fontawesome-free/css/all.css";
+
+/* Root Variables for Theming */
+:root {
+  --bg-color: #f9fafb; /* Light Background */
+  --text-color: #000000; /* Dark Text */
+  --primary-color: #4CAF50; /* Green Accent */
+  --primary-color-hover: #388e3c;
+  --card-bg-color: #f9fafb;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --shadow-color-hover: rgba(0, 0, 0, 0.2);
+  --secondary-color: #1A1A1D; /* Dark Grey Accent */
+  --link-color: #2563eb; /* Blue Link */
+  --border-color: #e5e7eb; /* Light Border */
+  --shadow-color: rgba(0, 0, 0, 0.7); /* Subtle Shadows */
+}
+
+.dark-mode {
+  --bg-color: #121212; /* Dark Background */
+  --text-color: #e4e4e4; /* Light Text */
+  --primary-color: #BB86FC; /* Vibrant Purple Accent */
+  --primary-color-hover: #64dd17;
+  --card-bg-color: #1e1e1e;
+  --secondary-color: #1F1F1F; /* Darker Grey Accent */
+  --link-color: #82b1ff; /* Soft Blue Link */
+  --border-color: #333333; /* Darker Border */
+  --shadow-color: rgba(0, 0, 0, 0.5); /* Stronger Shadows */
+  --shadow-color-hover: rgba(255, 255, 255, 0.2);
+}
+
+/* Base Styles */
 html, body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  /* Smooth Scrolling */
-html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
   scroll-behavior: smooth;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: var(--primary-color);
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px var(--shadow-color);
 }
 
 /* Responsive Design */
@@ -23,7 +69,7 @@ html {
   }
 
   .header a {
-    margin: 5px 0;
+    margin: 10px 0;
   }
 
   .grid {

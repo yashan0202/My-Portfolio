@@ -1,0 +1,79 @@
+.certifications-more {
+   padding: 50px 20px;
+   background-color: var(--bg-color);
+   color: var(--text-color);
+   transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .certifications-more .section-title {
+   text-align: center;
+   font-size: 2rem;
+   margin-bottom: 30px;
+   color: var(--primary-color);
+  }
+  
+  .certifications-more .content {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   justify-content: space-between;
+  }
+  
+  .certifications-more .content > div {
+   flex: 1 1 calc(33.33% - 20px); /* Equal width with spacing */
+   background-color: var(--card-bg-color);
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px var(--shadow-color);
+   transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .certifications-more .content > div:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 8px var(--shadow-color-hover);
+  }
+  
+  .certifications-more h3 {
+   font-size: 1.5rem;
+   margin-bottom: 15px;
+   color: var(--primary-color);
+   border-bottom: 2px solid var(--primary-color);
+   padding-bottom: 5px;
+  }
+  
+  .certifications-more ul {
+   list-style-type: disc;
+   margin: 10px 0 0 20px; /* Adds indentation to bullet points */
+   padding: 0;
+  }
+  
+  .certifications-more li {
+   margin-bottom: 10px;
+   font-size: 1rem;
+   color: var(--text-color);
+   line-height: 1.5;
+  }
+  
+  .certifications-more li a {
+   color: var(--link-color);
+   text-decoration: none;
+   transition: color 0.3s;
+  }
+  
+  .certifications-more li a:hover {
+   color: var(--primary-color);
+   text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+   .certifications-more .content {
+    flex-direction: column;
+    gap: 20px;
+   }
+  
+   .certifications-more .content > div {
+    flex: 1 1 100%;
+   }
+  }
+  

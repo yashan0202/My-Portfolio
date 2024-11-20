@@ -1,0 +1,44 @@
+/* Footer Styles */
+.footer {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 20px 0;
+    text-align: center;
+    border-top: 1px solid #eaeaea;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .footer-content h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .social-links li {
+    display: inline-block;
+  }
+  
+  .social-links a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #4caf50; /* Customize hover color */
+  }
+  
+  .footer-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  

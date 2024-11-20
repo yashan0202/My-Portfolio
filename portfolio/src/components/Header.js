@@ -1,32 +1,39 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import React, { useState } from "react";
 import "./Header.css";
 
 const Header = () => {
-  const [showHeader, setShowHeader] = useState(true);
-  const [lastScrollY, setLastScrollY] = useState(0);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const handleScroll = () => {
-    const currentScrollY = window.scrollY;
-    setShowHeader(currentScrollY < lastScrollY || currentScrollY < 50);
-    setLastScrollY(currentScrollY);
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.body.className = isDarkMode ? "light-mode" : "dark-mode";
   };
 
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrollY]);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
   return (
-    <header className={`header ${showHeader ? "visible" : "hidden"}`}>
-      <nav>
-        <a href="https://github.com/yashan0202" target="_blank" rel="noopener noreferrer">
-          GitHub
-        </a>
-        <Link to="landing" smooth duration={500}>Home</Link>
-        <Link to="projects" smooth duration={500}>Projects</Link>
-        <Link to="contact" smooth duration={500}>Contact</Link>
+    <header className="header">
+      <div className="logo">My Portfolio</div>
+      <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
+        <a href="#landing" onClick={() => setMenuOpen(false)}>Home</a>
+        <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
+        <a href="#certifications-more" onClick={() => setMenuOpen(false)}>Certifications & More</a>
+        <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
       </nav>
+      <div className="hamburger" onClick={toggleMenu}>
+        <span className="line"></span>
+        <span className="line"></span>
+        <span className="line"></span>
+      </div>
+      <div className="dark-mode-toggle">
+        <label className="switch">
+          <input type="checkbox" onChange={toggleDarkMode} />
+          <span className="slider"></span>
+        </label>
+      </div>
     </header>
   );
 };
