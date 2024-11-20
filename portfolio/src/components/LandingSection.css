@@ -1,5 +1,6 @@
 /* Landing Section */
 .landing {
+  position: relative; /* Allows child elements like .resume-box to be positioned */
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -28,4 +29,46 @@
   font-size: 1.2rem;
   font-weight: 300;
   max-width: 600px;
+}
+
+/* Resume Box */
+.resume-box {
+  position: absolute; /* Allows positioning relative to .landing section */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: var(--secondary-bg-color); /* Slightly contrasting background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--shadow-color);
+  display: inline-block;
+}
+
+.resume-box h3 {
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+.download-button {
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--bg-color); /* Button text contrasting with primary color */
+  background-color: var(--primary-color); /* Vibrant button color */
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.download-button:hover {
+  background-color: var(--primary-hover-color); /* Slightly darker on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .resume-box {
+    bottom: 10px; /* Adjust for smaller screens */
+    right: 10px;
+    padding: 15px;
+  }
 }
