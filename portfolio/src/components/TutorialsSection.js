@@ -15,6 +15,12 @@ const tutorials = [
     logo: "./java-script.png", // Replace with actual image path or URL
     link: "https://github.com/example/JavaScript",
   },
+  {
+    title: "C/C++",
+    description: "C and C++ programming including OOPs concepts and Data Structures.",
+    logo: "./c-plus-plus.png", // Replace with actual image path or URL
+    link: "https://github.com/example/JavaScript",
+  },
   // Add more tutorials as needed
 ];
 
