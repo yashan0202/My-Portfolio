@@ -1,0 +1,105 @@
+/* Blog Page Styling */
+.blog-page {
+    padding: 2rem;
+    background-color: var(--background-color, #1f1f2e); /* Use your site-wide colors */
+    color: var(--text-color, #f4f4f4);
+  }
+  
+  .blog-page-header {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color, #f4ce14);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .blog-page-list {
+    display: flex;
+    flex-direction: column; /* Ensure cards are stacked vertically */
+    gap: 1.5rem; /* Add spacing between cards */
+    align-items: center; /* Center cards horizontally */
+  }
+  
+  .blog-page-card {
+    background-color: var(--card-bg, #3f3f5d);
+    border-radius: 8px;
+    padding: 1.5rem;
+    width: 100%;
+    max-width: 1000px; /* Set a max width to limit the card size */
+    min-height: 200px; /* Set a minimum height to stretch the card */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .blog-page-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .blog-page-title {
+    font-size: 1.5rem;
+    color: #e7e7ef;
+    margin-bottom: 0.5rem;
+  }
+  .author-image {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px;
+    border-radius: 50%; /* Makes the image circular */
+    margin-right: 0.5rem; /* Add spacing between the image and the text */
+    object-fit: cover; /* Ensures the image is properly cropped */
+    border: 2px solid var(--secondary-color, #c6e3d9); /* Optional: Add a border */
+    display: inline-block;
+    vertical-align: middle; /* Aligns with the author's name */
+  }
+  
+  
+  .blog-page-author {
+    font-size: 0.9rem;
+    color: var(--muted-text, #ccc);
+    margin-bottom: 1rem;
+  }
+  
+  .blog-page-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #c4c4d7;
+    margin-bottom: 1.5rem;
+  }
+  
+  .blog-page-buttons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .blog-page-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .blog-page-btn.btn-primary {
+    background-color: var(--primary-color, #f4ce14);
+    color: #1f1f2e;
+  }
+  
+  .blog-page-btn.btn-secondary {
+    background-color: var(--secondary-color, #495e57);
+    color: white;
+  }
+  
+  .blog-page-btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .blog-page-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

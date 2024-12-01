@@ -16,7 +16,7 @@ const App = () => {
     <div className="app">
       <Router>
        <Routes>
-        <Route path="/blogs" element={<BlogPage blogs={blogs} />} />
+        <Route path="/blogs" element={<BlogPage />} />
         {/* Add other routes here */}
        </Routes>
       </Router>
@@ -55,6 +55,4 @@ const blogs = [
     originalLink: "https://example.com/original-blog2",
   },
 ];
-
-
 export default App;

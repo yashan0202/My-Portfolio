@@ -16,7 +16,7 @@
   form {
    max-width: 500px;
    margin: 0 auto;
-   background-color: var(--form-bg-color); /* Customizable background for form */
+   background-color: #3f3f5d; /* Customizable background for form */
    padding: 20px;
    border-radius: 8px;
    box-shadow: 0 4px 6px var(--shadow-color); /* Subtle shadow for modern look */
@@ -27,7 +27,7 @@
    display: block;
    margin-bottom: 10px;
    font-weight: 500;
-   color: var(--bg-color); /* Matches text color dynamically */
+   color: white; /*var(--bg-color) Matches text color dynamically */
    transition: color 0.3s;
   }
   

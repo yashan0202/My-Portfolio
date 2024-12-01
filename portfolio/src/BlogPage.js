@@ -1,52 +1,50 @@
 import React from "react";
+import "./BlogPage.css";
 
-const BlogPage = ({ blogs }) => {
+const blogs = [
+  {
+    title: "How to integrate MongoDB into your Next.js apps",
+    author: "Haris Ali Khan",
+    date: "November 3, 2024",
+    description:
+      "Learn how to seamlessly integrate MongoDB into your Next.js applications with best practices for efficient connection handling, resource management, and improved performance.",
+    readMoreLink: "#",
+    originalLink: "#",
+  },
+  {
+    title: "How to host a Next.js app in Production on an Ubuntu VPS",
+    author: "Haris Ali Khan",
+    date: "March 23, 2024",
+    description:
+      "Learn how to deploy a Next.js application in a production environment on an Ubuntu VPS with this comprehensive guide. Follow step-by-step instructions to set up NGINX, PM2, and configure your Next.js app for seamless hosting.",
+    readMoreLink: "#",
+    originalLink: "#",
+  },
+];
+
+const BlogPage = () => {
   return (
-    <div className="blog-page" style={{ padding: "20px", background: "#0d1117", color: "white" }}>
-      <h1 style={{ fontSize: "2rem", marginBottom: "20px", textAlign: "center" }}>Coding Articles</h1>
-      <div style={{ display: "flex", flexDirection: "column", gap: "20px" }}>
+    <div className="blog-page">
+      <h1 className="blog-page-header">Coding Articles</h1>
+      <div className="blog-page-list">
         {blogs.map((blog, index) => (
-          <div key={index} style={{ background: "#161b22", padding: "20px", borderRadius: "10px" }}>
-            <h2 style={{ fontSize: "1.5rem", marginBottom: "10px" }}>{blog.title}</h2>
-            <div style={{ display: "flex", alignItems: "center", marginBottom: "10px" }}>
+          <div className="blog-page-card" key={index}>
+            <h2 className="blog-page-title">{blog.title}</h2>
+              <div className="blog-page-author">
               <img
-                src={blog.authorImage}
-                alt={blog.author}
-                style={{ width: "40px", height: "40px", borderRadius: "50%", marginRight: "10px" }}
+              src="./pic.png"
+              alt="Author"
+              className="author-image"
               />
-              <p>
-                {blog.author} • <span>{blog.date}</span>
-              </p>
+            <span>{blog.author} • {blog.date}</span>
             </div>
-            <p style={{ marginBottom: "10px" }}>{blog.description}</p>
-            <div style={{ display: "flex", gap: "10px" }}>
-              <a
-                href={blog.readMoreLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  padding: "10px 20px",
-                  background: "#6c63ff",
-                  color: "white",
-                  textDecoration: "none",
-                  borderRadius: "5px",
-                }}
-              >
+            <p className="blog-page-description">{blog.description}</p>
+            <div className="blog-page-buttons">
+              <a href={blog.readMoreLink} className="blog-page-btn btn-primary">
                 Read More
               </a>
-              <a
-                href={blog.originalLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  padding: "10px 20px",
-                  background: "#ff6b6b",
-                  color: "white",
-                  textDecoration: "none",
-                  borderRadius: "5px",
-                }}
-              >
-                Original Blog
+              <a href={blog.originalLink} className="blog-page-btn btn-secondary">
+                Original Link
               </a>
             </div>
           </div>
