@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProjectCard.css";
 
 const ProjectCard = ({ project, isTutorial = false, extraClass = "" }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Description limit for truncation
+  const charLimit = 100;
+
+  const handleReadMoreToggle = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div className={`card ${isTutorial ? "tutorial-card" : ""} ${extraClass}`}>
       {project.logo && (
@@ -13,8 +22,18 @@ const ProjectCard = ({ project, isTutorial = false, extraClass = "" }) => {
       )}
       <h3 className={isTutorial ? "tutorial-title" : ""}>{project.title}</h3>
       {project.description && (
-        <p className={isTutorial ? "tutorial-description" : "card-description"}>
-          {project.description}
+        <p className="card-description">
+          {isExpanded || project.description.length <= charLimit
+            ? project.description
+            : `${project.description.slice(0, charLimit)}... `}
+          {project.description.length > charLimit && (
+            <span
+              className="read-more"
+              onClick={handleReadMoreToggle}
+            >
+              {isExpanded ? "Show Less" : "Read More"}
+            </span>
+          )}
         </p>
       )}
       <a
