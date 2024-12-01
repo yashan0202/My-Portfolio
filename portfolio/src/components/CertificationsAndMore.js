@@ -13,7 +13,7 @@ const CertificationsAndMore = () => {
             <ul>
               <li>
                 <a
-                  href="https://coursera.org/certificate/react-developer"
+                  href="https://www.coursera.org/account/accomplishments/verify/TK8XBZYRELLN"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -22,20 +22,38 @@ const CertificationsAndMore = () => {
               </li>
               <li>
                 <a
-                  href="https://udemy.com/full-stack-development"
+                  href="https://www.coursera.org/account/accomplishments/verify/38TJZ2TZFUGW"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Full-Stack Web Development - Udemy
+                  Neural Networks and Deep Learning - DeepLearning.AI
                 </a>
               </li>
               <li>
                 <a
-                  href="https://online.stanford.edu/machine-learning"
+                  href="https://www.cloudskillsboost.google/public_profiles/02f136e5-9df5-4725-8352-00f8ad959842/badges/6075364"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Machine Learning Specialization - Stanford Online
+                  Introduction to Generative AI - Google
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://moonshot.scaler.com/s/sl/Wstx7c8M8z"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Data Structures & Algorithms - Scaler
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.credly.com/badges/e38d450a-00dd-4ef8-ae78-0d59b951052a/print"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  AWS Cloud - Amazon Web Services
                 </a>
               </li>
             </ul>
@@ -44,17 +62,21 @@ const CertificationsAndMore = () => {
           <div className="work-experience">
             <h3>Work Experience</h3>
             <ul>
-              <li>Full Stack Developer Intern at XYZ Tech Solutions</li>
-              <li>Backend Engineer Intern at ABC Corporation</li>
+              <li>Front-End Software Developer at Skyscanner - <b>2024</b></li>
+              <li>Global Finance and Business Management Intern at JPMorgan&Chase - <b>2024</b></li>
+              <li>Full Stack Developer Intern at GroIntern - <b>2023</b></li>
+              <li>UI/UX Developer Intern at GeeksforGeeks - <b>2021</b></li>
             </ul>
           </div>
 
           <div className="extra-curricular">
             <h3>Extra-Curricular Activities</h3>
             <ul>
-              <li>Organized a hackathon at university with 300+ participants</li>
-              <li>Volunteered as a coding mentor for high school students</li>
-              <li>Active member of the Drama Club and Robotics Team</li>
+              <li>Writing <b>Blog on latest Tech</b> on LinkedIn</li>
+              <li>Served as a <b>Co-ordinator of the Fashion Society “KRYSTAL”</b>, KIIT University</li>
+              <li>Led my college's <b>Event Management Committee</b></li>
+              <li>Participated in <b>GitHub Hands-on Workshop</b> organized by GitHub</li>
+              <li>Volunteered for <b>Rotaract Club of Bhubaneswar</b> for Social Cause</li>
             </ul>
           </div>
         </div>
