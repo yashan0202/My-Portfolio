@@ -7,11 +7,13 @@ const Header = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  // Function to toggle Dark Mode
   const toggleDarkMode = () => {
     setIsDarkMode(!isDarkMode);
     document.body.className = isDarkMode ? "light-mode" : "dark-mode";
   };
 
+  // Function to toggle Menu
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -24,6 +26,7 @@ const Header = () => {
         <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
         <a href="#tutorials" onClick={() => setMenuOpen(false)}>Tutorials</a>
         <a href="#certifications-more" onClick={() => setMenuOpen(false)}>Certifications & More</a>
+        <a href="/blogs" onClick={() => setMenuOpen(false)}>Blog</a>
         <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
       </nav>
       <div className="hamburger" onClick={toggleMenu}>
@@ -31,10 +34,9 @@ const Header = () => {
         <span className="line"></span>
         <span className="line"></span>
       </div>
-      <div className="dark-mode-toggle" onClick = {toggleDarkMode}>
-      <div className={`toggle-switch ${isDarkMode ? "dark" : "light"}`}>
-        <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} 
-        className="dark-mode-icon" />
+      <div className="dark-mode-toggle" onClick={toggleDarkMode}>
+        <div className={`toggle-switch ${isDarkMode ? "dark" : "light"}`}>
+          <FontAwesomeIcon icon={isDarkMode ? faSun : faMoon} className="dark-mode-icon" />
         </div>
       </div>
     </header>
