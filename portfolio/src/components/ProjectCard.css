@@ -4,6 +4,7 @@
    padding: 20px;
    border-radius: 8px;
    box-shadow: 0 4px 6px var(--shadow-color);
+   text-align: left;
    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
   }
   
@@ -41,6 +42,54 @@
    background-color: var(--primary-color-hover);
    transform: translateY(-3px);
   }
+
+  .card-logo {
+   width: 50px;
+   height: 50px;
+   margin-bottom: 10px;
+   border-radius: 50%;
+ }
+
+ .card-description {
+   font-size: 0.9rem;
+   color: var(--text-secondary-color);
+   margin: 10px 0;
+ }
+ 
+ /* Tutorial-Specific Styles */
+ .tutorial-card {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   gap: 15px;
+ }
+ 
+ .tutorial-logo {
+   width: 80px;
+   height: 80px;
+ }
+ 
+ .tutorial-title {
+   font-size: 1.5rem;
+   color: var(--primary-color);
+ }
+ 
+ .tutorial-button {
+   background-color: var(--primary-color);
+   color: var(--bg-color);
+   font-size: 1rem;
+   font-weight: bold;
+   padding: 10px 20px;
+   border-radius: 8px;
+   transition: background-color 0.3s, transform 0.2s;
+ }
+ 
+ .tutorial-button:hover {
+   background-color: var(--primary-hover-color);
+   transform: scale(1.05);
+ }
   
   /* Responsive Design */
   @media (max-width: 768px) {

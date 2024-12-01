@@ -1,0 +1,36 @@
+.tutorials {
+    padding: 4rem 2rem;
+    background-color: var(--secondary-bg-color);
+    color: var(--text-color);
+  }
+  
+  .tutorials h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--primary-color);
+  }
+  
+  .tutorial-card .card-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .tutorials .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+   }
+  
+  .tutorial-card .tutorial-button {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border: 1px solid var(--primary-hover-color);
+  }
+  
+  .tutorial-card .tutorial-button:hover {
+    background-color: var(--primary-color-hover);
+  }
+  
