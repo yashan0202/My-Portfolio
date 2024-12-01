@@ -5,13 +5,13 @@ import ProjectCard from "./ProjectCard";
 const tutorials = [
   {
     title: "Python",
-    description: "Comprehensive Python tutorials from basics to advanced.",
+    description: "Learn Python with topic wise hands-on examples and projects.",
     logo: "./python.png", // Replace with actual image path or URL
     link: "https://github.com/yashan0202/Python",
   },
   {
     title: "JavaScript",
-    description: "Learn JavaScript with hands-on examples and projects.",
+    description: "Comprehensive JavaScript tutorials from basics to advanced.",
     logo: "./java-script.png", // Replace with actual image path or URL
     link: "https://github.com/example/JavaScript",
   },
