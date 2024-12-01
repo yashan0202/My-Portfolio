@@ -3,12 +3,13 @@
    color: var(--text-color);
    padding: 20px;
    margin: 10px;
-   
    border-radius: 20px;
    box-shadow: 0 4px 6px var(--shadow-color);
    text-align: left;
    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
-   max-width: 500px;
+   max-width: 350px; /* Adjust the card's width here */
+   width: 100%; /* Ensure the card is responsive */
+   min-width: 280px; /* Set a minimum width for consistency */
   }
   
   .card:hover {
@@ -87,9 +88,11 @@
  .projects-container {
    display: flex;
    flex-wrap: wrap;
-   gap: 20px; /* Add spacing between cards */
+   gap: 30px; /* Add spacing between cards */
    justify-content: center;
    padding: 20px;
+   max-width: 1200px; /* Set the maximum width of the container */
+   margin: 0 auto; /* Center the container on the page */
  } 
  
  /* Tutorial-Specific Styles */
