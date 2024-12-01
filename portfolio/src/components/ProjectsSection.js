@@ -12,6 +12,7 @@ const projects = [
   { title: "Kamakhya Jwellers", description: "A Jwellery-Website Interference build as a Front-End Development project using HTML, CSS and JavaScript", link: "https://github.com/yashan0202/Jwellery-Website" },
   { title: "React Native Application", description: "React Native application paired with comprehensive end-to-end tests written using Maestro. The project showcases how to set up an environment, generate a React Native application, and write effective tests to ensure the application works as intended.", link: "https://github.com/yashan0202/React-Native-Application" },
   { title: "Resume Builder", description: "The Resume Builder is a dynamic and customizable tool developed using React. It allows users to create, edit, and manage their resumes by adding various sections tailored to their professional and personal profiles. ", link: "https://github.com/yashan0202/Resume-Builder" },
+  { title: "Textutils", description: "Textutils is a versatile text editor application built using React.js. Designed as a beginner project, it provides users with essential text-editing functionalities, including text transformations, word and character counting, and the ability to remove unwanted spaces.", link: "https://github.com/yashan0202/textutils" },
 
 ];
 
