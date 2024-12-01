@@ -1,9 +1,13 @@
 .card {
+   display: flex;
+   flex-direction: column; /* Stack elements vertically */
+   justify-content: space-between; /* Space out content evenly */
+   height: 100%; /* Ensure cards have the same height */
    background-color: var(--card-bg-color);
    color: var(--text-color);
    padding: 20px;
    margin: 10px;
-   border-radius: 20px;
+   border-radius: 15px;
    box-shadow: 0 4px 6px var(--shadow-color);
    text-align: left;
    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s;
@@ -11,7 +15,9 @@
    width: 100%; /* Ensure the card is responsive */
    min-width: 280px; /* Set a minimum width for consistency */
   }
-  
+  .card-content {
+   flex-grow: 1; /* Ensures this section takes up the available space */
+ }
   .card:hover {
    transform: translateY(-5px);
    box-shadow: 0 6px 8px var(--shadow-color-hover);
