@@ -8,8 +8,9 @@
   
   .certifications-more .section-title {
    text-align: center;
+   margin-bottom: 3rem;
    font-size: 2rem;
-   margin-bottom: 30px;
+   
    color: var(--primary-color);
   }
   
