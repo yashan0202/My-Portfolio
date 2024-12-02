@@ -1,8 +1,16 @@
 /* Blog Page Styling */
 .blog-page {
-    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     background-color: var(--background-color, #1f1f2e); /* Use your site-wide colors */
     color: var(--text-color, #f4f4f4);
+  }
+
+  .blog-page-content {
+    max-width: 1200px; /* Center the content */
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
   
   .blog-page-header {
@@ -11,6 +19,7 @@
     color: var(--primary-color, #f4ce14);
     text-align: center;
     margin-bottom: 2rem;
+    margin-top: 2rem;
   }
   
   .blog-page-list {
@@ -21,6 +30,7 @@
   }
   
   .blog-page-card {
+    margin-bottom: 2rem;
     background-color: var(--card-bg, #3f3f5d);
     border-radius: 8px;
     padding: 1.5rem;
@@ -94,6 +104,10 @@
   .blog-page-btn:hover {
     opacity: 0.9;
     cursor: pointer;
+  }
+
+  footer {
+    margin-top: auto; /* Ensures the footer is at the bottom */
   }
   
   @media (max-width: 768px) {

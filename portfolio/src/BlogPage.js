@@ -62,18 +62,19 @@ const blogs = [
 const BlogPage = () => {
   return (
     <div className="blog-page">
+      
       <h1 className="blog-page-header">Tech & Beyond</h1>
       <div className="blog-page-list">
         {blogs.map((blog, index) => (
           <div className="blog-page-card" key={index}>
             <h2 className="blog-page-title">{blog.title}</h2>
-              <div className="blog-page-author">
+            <div className="blog-page-author">
               <img
-              src="./pic.png"
-              alt="Author"
-              className="author-image"
+                src="./pic.png"
+                alt="Author"
+                className="author-image"
               />
-            <span>{blog.author} • {blog.date}</span>
+              <span>{blog.author} • {blog.date}</span>
             </div>
             <p className="blog-page-description">{blog.description}</p>
             <div className="blog-page-buttons">
@@ -87,6 +88,7 @@ const BlogPage = () => {
           </div>
         ))}
       </div>
+      
     </div>
   );
 };
