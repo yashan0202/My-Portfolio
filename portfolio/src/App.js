@@ -10,25 +10,34 @@ import Footer from "./components/Footer";
 import BlogPage from "./BlogPage";
 import "./App.css";
 
+const HomePage = () => {
+  return (
+    <>
+      <LandingSection />
+      <ProjectsSection />
+      <TutorialsSection />
+      <CertificationsAndMore />
+      <ContactForm />
+    </>
+  );
+};
+
 const App = () => {
   return (
     <div className="app">
       <Router>
         <Header />
         <Routes>
-          {/* Define routes for your different sections */}
-          <Route path="/" element={<LandingSection />} />
+          {/* Define your routes */}
+          <Route path="/" element={<HomePage />} />
           <Route path="/blogs" element={<BlogPage />} />
-          <Route path="/projects" element={<ProjectsSection />} />
-          <Route path="/tutorials" element={<TutorialsSection />} />
-          <Route path="/certifications" element={<CertificationsAndMore />} />
-          <Route path="/contact" element={<ContactForm />} />
         </Routes>
         <Footer />
       </Router>
     </div>
   );
 };
+
 const blogs = [
   {
     title: "",
