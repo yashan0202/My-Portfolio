@@ -13,6 +13,15 @@ const CertificationsAndMore = () => {
             <ul>
               <li>
                 <a
+                  href="https://www.coursera.org/account/accomplishments/professional-cert/N15FW3PSDAS9"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Meta Front-End Developer - Meta
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://www.coursera.org/account/accomplishments/verify/TK8XBZYRELLN"
                   target="_blank"
                   rel="noopener noreferrer"
