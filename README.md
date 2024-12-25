@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>My Portfolio - React Personal Website</title>
-</head>
-<body>
-    <h1>My Portfolio</h1>
+
+<h1>My Portfolio</h1>
 
    <h2>Project Overview</h2>
     <p>
@@ -68,7 +63,8 @@
     <p>
         <strong>My Portfolio</strong> effectively highlights my technical and creative abilities, serving as a professional introduction to potential collaborators, employers, and peers. It demonstrates my expertise in <strong>React development</strong> and my dedication to building engaging and user-friendly web applications.
     </p>
-</body>
-</html>
+
+
+<h2>Developed by: Yash Anand</h2>
 
  
