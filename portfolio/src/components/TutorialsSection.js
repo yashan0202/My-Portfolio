@@ -1,4 +1,7 @@
 import React from "react";
+import pythonLogo from "../assets/python.png";
+import jsLogo from "../assets/java-script.png";
+import cppLogo from "../assets/c-plus-plus.png";
 import "./TutorialsSection.css";
 import ProjectCard from "./ProjectCard";
 
@@ -6,19 +9,19 @@ const tutorials = [
   {
     title: "Python",
     description: "Learn Python with topic wise hands-on examples and projects.",
-    logo: "./python.png", // Replace with actual image path or URL
+    logo: pythonLogo , // Replace with actual image path or URL
     link: "https://github.com/yashan0202/Python",
   },
   {
     title: "JavaScript",
     description: "Comprehensive JavaScript tutorials from basics to advanced.",
-    logo: "./java-script.png", // Replace with actual image path or URL
+    logo: jsLogo, // Replace with actual image path or URL
     link: "https://github.com/yashan0202/JavaScript",
   },
   {
     title: "C/C++",
     description: "C and C++ programming including OOPs concepts and Data Structures.",
-    logo: "./c-plus-plus.png", // Replace with actual image path or URL
+    logo: cppLogo, // Replace with actual image path or URL
     link: "https://github.com/yashan0202/C-plus-plus-Programming",
   },
   // Add more tutorials as needed

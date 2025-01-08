@@ -1,4 +1,5 @@
 import React from "react";
+import avatar from "./assets/pic.png";
 import "./BlogPage.css";
 
 const blogs = [
@@ -70,7 +71,7 @@ const BlogPage = () => {
             <h2 className="blog-page-title">{blog.title}</h2>
             <div className="blog-page-author">
               <img
-                src="./pic.png"
+                src={avatar} 
                 alt="Author"
                 className="author-image"
               />
