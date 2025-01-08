@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import LandingSection from "./components/LandingSection";
 import ProjectsSection from "./components/ProjectsSection";
 import TutorialsSection from "./components/TutorialsSection";
 import CertificationsAndMore from "./components/CertificationsAndMore";
 import ContactForm from "./components/ContactForm";
-import Footer from "./components/Footer";
 import BlogPage from "./BlogPage";
 import "./App.css";
 
@@ -24,17 +24,18 @@ const HomePage = () => {
 
 const App = () => {
   return (
-    <div className="app">
-      <Router>
-        <Header />
-        <Routes>
-          {/* Define your routes */}
-          <Route path="/" element={<HomePage />} />
-          <Route path="/blogs" element={<BlogPage />} />
-        </Routes>
-        <Footer />
-      </Router>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectsSection />} />
+        <Route path="/tutorials" element={<TutorialsSection />} />
+        <Route path="/certifications" element={<CertificationsAndMore />} />
+        <Route path="/contact" element={<ContactForm />} />
+        <Route path="/blogs" element={<BlogPage />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 };
 
