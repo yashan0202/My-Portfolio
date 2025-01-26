@@ -65,6 +65,6 @@
     </p>
 
 
-<h2>Developed by: Yash Anand</h2>
+<h2>Developed by: Yash Anand </h2>
 
  
